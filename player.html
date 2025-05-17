@@ -34,18 +34,23 @@
 <body>
   <header>
     <nav class="navbar">
-        <a href="index.html" class="logo">AWStream</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="#movies">Film</a></li>
-            <li><a href="#series">Serial TV</a></li>
-            <li><a href="#genres">Genre</a></li>
-        </ul>
-        <div class="search-box">
-          <form onsubmit="searchMovie(event)">
-            <input type="text" id="searchInput" placeholder="Cari film...">
-            <button type="submit">Cari</button>
-          </form>          
+      <a href="index.html" class="logo">AWStream</a>
+  
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#movies">Film</a></li>
+        <li><a href="#series">Serial TV</a></li>
+        <li><a href="#genres">Genre</a></li>
+      </ul>
+  
+      <div class="search-box">
+        <form onsubmit="searchMovie(event)">
+          <input type="text" id="searchInput" placeholder="Cari film...">
+          <button type="submit">Cari</button>
+        </form>
+      </div>
     </nav>
 </header>
 
